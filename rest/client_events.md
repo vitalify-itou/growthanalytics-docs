@@ -24,8 +24,6 @@ Create a new client event data point.
 
 ### Parameters
 
-The name is used to display on dashboard.
-
 |Key|Value|Default|
 |---|---|---|
 |clientId|Client ID||

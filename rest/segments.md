@@ -67,8 +67,6 @@ Create a new segment or update the existing segment.
 
 ### Parameters
 
-The name is used to display on dashboard.
-
 |Key|Value|Default|
 |---|---|---|
 |name|Name for the segment|(Empty string)|
@@ -77,8 +75,6 @@ The name is used to display on dashboard.
 |credentialId|Credential ID for authentication||
 
 ### Required permission
-
-The segmentId of resource is for the segment of credential.
 
 |Resource|Action|
 |---|---|
@@ -125,8 +121,6 @@ Delete a segment.
 |credentialId|Credential ID for authentication||
 
 ### Required permission
-
-The segmentId of resource is for the segment of credential.
 
 |Resource|Action|
 |---|---|

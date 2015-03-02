@@ -23,8 +23,6 @@ Update the value of the tag.
 
 ### Parameters
 
-The name is used to display on dashboard.
-
 |Key|Value|Default|
 |---|---|---|
 |clientId|Client ID||

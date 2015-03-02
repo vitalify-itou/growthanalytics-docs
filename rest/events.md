@@ -71,8 +71,6 @@ The name is used to display on dashboard.
 
 ### Required permission
 
-The eventId of resource is for the event of credential.
-
 |Resource|Action|
 |---|---|
 |Resource:Growthbeat:Application:{applicationId}|Action:GrowthAnalytics:UpdateEvent|
@@ -111,8 +109,6 @@ Delete a event.
 |credentialId|Credential ID for authentication||
 
 ### Required permission
-
-The eventId of resource is for the event of credential.
 
 |Resource|Action|
 |---|---|

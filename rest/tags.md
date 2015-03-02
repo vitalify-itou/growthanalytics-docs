@@ -61,8 +61,6 @@ Create a new tag or update the existing tag.
 
 ### Parameters
 
-The name is used to display on dashboard.
-
 |Key|Value|Default|
 |---|---|---|
 |name|Name for the tag|(Empty string)|
@@ -70,8 +68,6 @@ The name is used to display on dashboard.
 |credentialId|Credential ID for authentication||
 
 ### Required permission
-
-The tagId of resource is for the tag of credential.
 
 |Resource|Action|
 |---|---|
@@ -111,8 +107,6 @@ Delete a tag.
 |credentialId|Credential ID for authentication||
 
 ### Required permission
-
-The tagId of resource is for the tag of credential.
 
 |Resource|Action|
 |---|---|
