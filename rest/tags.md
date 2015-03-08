@@ -47,6 +47,49 @@ curl -X GET -H 'Accept: application/json' 'https://api.analytics.growthbeat.com/
 }
 ```
 
+## List tags
+
+List tags
+
+### Request
+
+|Key|Value|
+|---|---|
+|Method|GET|
+|URL|https://api.analytics.growthbeat.com/1/tags|
+
+### Parameters
+
+|Key|Value|Default|
+|---|---|---|
+|parentTagId|Tag ID of search root||
+|order|Sort order|ascending|
+|page|Page for the list|1|
+|limit|Max count for a page|100|
+|credentialId|Credential ID for authentication||
+
+### Required permission
+
+|Resource|Action|
+|---|---|
+|Resource:Growthbeat:Application:{applicationId}|Action:GrowthAnalytics:ListTag|
+
+### Example
+
+```
+curl -X GET -H 'Accept: application/json' 'https://api.analytics.growthbeat.com/1/tags?parentTagId=Tag:LBYtXQ26k6pHRZZB&order=ascending&page=1&limit=5&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
+```
+
+```
+[
+	{"name":"Custom","id":"Tag:LBYtXQ26k6pHRZZB:Custom","created":"2015-01-22T05:27:27+0000","description":"Custom"},
+	{"name":"Gender","id":"Tag:LBYtXQ26k6pHRZZB:Custom:Gender","created":"2015-02-11T08:07:01+0000","description":"Gender"},
+	{"name":"Default","id":"Tag:LBYtXQ26k6pHRZZB:Default","created":"2015-01-22T05:27:27+0000","description":"Default"},
+	{"name":"FrindCount","id":"Tag:LBYtXQ26k6pHRZZB:Default:FriendCount","created":"2015-01-22T05:27:27+0000","description":"The number of friends"},
+	{"name":"Level","id":"Tag:LBYtXQ26k6pHRZZB:Default:Level","created":"2015-01-22T05:27:27+0000","description":"Level"}
+]
+```
+
 ## Update tag
 
 Create a new tag or update the existing tag.
