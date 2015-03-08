@@ -57,6 +57,49 @@ curl -X GET -H 'Accept: application/json' 'https://api.analytics.growthbeat.com/
 }
 ```
 
+## List metrics
+
+List metrics
+
+### Request
+
+|Key|Value|
+|---|---|
+|Method|GET|
+|URL|https://api.analytics.growthbeat.com/1/metrics|
+
+### Parameters
+
+|Key|Value|Default|
+|---|---|---|
+|parentMetricId|Metric ID of search root||
+|order|Sort order|ascending|
+|page|Page for the list|1|
+|limit|Max count for a page|100|
+|credentialId|Credential ID for authentication||
+
+### Required permission
+
+|Resource|Action|
+|---|---|
+|Resource:Growthbeat:Application:{applicationId}|Action:GrowthAnalytics:ListMetric|
+
+### Example
+
+```
+curl -X GET -H 'Accept: application/json' 'https://api.analytics.growthbeat.com/1/metrics?parentMetricId=Metric:LBYtXQ26k6pHRZZB&order=ascending&page=1&limit=5&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
+```
+
+```
+[
+	{"name":"Custom","id":"Metric:LBYtXQ26k6pHRZZB:Custom","query":null,"created":"2015-01-22T05:27:27+0000","description":"Custom","color":null},
+	{"name":"TutorialCompleted","id":"Metric:LBYtXQ26k6pHRZZB:Custom:TutorialCompleted","query":null,"created":"2015-02-11T07:54:36+0000","description":"Unique users who completed tutorial","color":null},
+	{"name":"Default","id":"Metric:LBYtXQ26k6pHRZZB:Default","query":null,"created":"2015-01-22T05:27:27+0000","description":"Default","color":null},
+	{"name":"ARPPU","id":"Metric:LBYtXQ26k6pHRZZB:Default:ARPPU","query":null,"created":"2015-01-22T05:27:37+0000","description":"Average revenue per pay user","color":null},
+	{"name":"ARPU","id":"Metric:LBYtXQ26k6pHRZZB:Default:ARPU","query":null,"created":"2015-01-22T05:27:37+0000","description":"Average revenue per user","color":null}
+]
+```
+
 ## Update metric
 
 Create a new metric or update the existing metric.
