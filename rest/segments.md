@@ -126,7 +126,7 @@ Create a new segment or update the existing segment.
 ### Example
 
 ```
-curl -X PUT -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.analytics.growthbeat.com/1/segments/Segment:LBYtXQ26k6pHRZZB:Custom:Level5OrMore' -d 'name=Level 5 or more' -d 'description=The users whose level is more than 5' -d 'query={"type":"tag","tagId":"Tag:OvN0YPxSeadpLt6n:Default:Level","operator":"greater_equal","value":"5"}' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
+curl -X PUT -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.analytics.growthbeat.com/1/segments/Segment:LBYtXQ26k6pHRZZB:Custom:Level5OrMore' -d 'name=Level 5 or more' -d 'description=The users whose level is more than 5' -d 'query={"type":"tag","tagId":"Tag:LBYtXQ26k6pHRZZB:Default:Level","operator":"greater_equal","value":"5"}' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```

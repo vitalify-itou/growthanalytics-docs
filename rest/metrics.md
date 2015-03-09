@@ -131,7 +131,7 @@ Create a new metric or update the existing metric.
 ### Example
 
 ```
-curl -X PUT -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.analytics.growthbeat.com/1/metrics/Metric:LBYtXQ26k6pHRZZB:Custom:Install' -d 'name=Install' -d 'description=Install users count' -d 'query={"type":"event","direction":"up","eventId":"Event:OvN0YPxSeadpLt6n:Default:Install","calculationQuery":{"type":"count"},"filterQuery":null}' -d 'color=0' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
+curl -X PUT -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.analytics.growthbeat.com/1/metrics/Metric:LBYtXQ26k6pHRZZB:Custom:Install' -d 'name=Install' -d 'description=Install users count' -d 'query={"type":"event","direction":"up","eventId":"Event:LBYtXQ26k6pHRZZB:Default:Install","calculationQuery":{"type":"count"},"filterQuery":null}' -d 'color=0' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
