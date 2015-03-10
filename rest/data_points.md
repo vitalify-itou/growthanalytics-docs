@@ -1,5 +1,12 @@
 # Data Points API
 
+## Data Point
+
+|Key|Value|
+|---|---|
+|category|Category for the value|
+|value|Value of this data point|
+
 ## List data points
 
 List data points

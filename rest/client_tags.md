@@ -7,7 +7,7 @@
 |clientId|Client|
 |tagId|Tag ID|
 |value|Value of the tag|
-|created|Time for the tracking|
+|updated|Updated time|
 
 ## Create client tag
 
